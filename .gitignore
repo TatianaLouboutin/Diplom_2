@@ -1,0 +1,10 @@
+Lib
+Scripts
+pyvenv.cfg
+.idea
+.pytest_cache
+__pycache__
+endpoints/__pycache__
+tests/__pycache__
+
+
