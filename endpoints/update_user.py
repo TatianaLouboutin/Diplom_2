@@ -11,9 +11,6 @@ class Update(Auth):
         response = requests.patch(urls.BASE_URL + urls.DELETE_UPDATE, data=payload, headers={'Authorization': token})
         return response
 
-    @allure.step('Отправляем запрос на обновление')
-    def update_user(self, payload):
-        return payload
 
     @allure.step('Отправляем запрос на обновление без авторизации')
     def update_user_without_auth(self):

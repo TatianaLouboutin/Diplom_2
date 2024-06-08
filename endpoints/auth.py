@@ -11,7 +11,5 @@ class Auth(Registration):
         response = requests.post(urls.BASE_URL + urls.AUTH, data=payload)
         return response
 
-    @allure.step('Авторизация с любым payload')
-    def login_with_payload(self, payload):
-        return payload
+
 

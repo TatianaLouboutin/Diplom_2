@@ -30,9 +30,6 @@ class Registration:
     def delete_user(self, payload, token):
         requests.delete(urls.BASE_URL + urls.DELETE_UPDATE, data=payload, headers={'Authorization': token})
 
-    @allure.step('Регистрация любого пользователя')
-    def registration_user(self, payload):
-        return payload
 
 
     @allure.step('Регистрация пользователя с пустым полем')

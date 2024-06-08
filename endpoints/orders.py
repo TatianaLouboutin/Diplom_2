@@ -1,9 +1,8 @@
 import urls
-from endpoints.auth import Auth
 import requests
 import allure
 
-class Orders(Auth):
+class Orders:
 
     @allure.step('Создание заказа любым payload')
     def create_order(self, payload, token):
